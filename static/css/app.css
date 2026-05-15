@@ -96,12 +96,15 @@ td {
   outline: none;
   border: none;
   resize: vertical;
-  height: 500px;
-  height: 65vh;
-  overflow: scroll;
+  overflow: auto;
   tab-size: 4;
+  min-height: 25vw;
+  height:100%;
 }
-
+td{
+  background-color:#0f1012;
+  height:1px;
+}
 #input {
     background: #ECF2F5;
     border-right: 2px solid #AAA;
@@ -195,4 +198,45 @@ footer {
   .intro > div {
     width: 100%;
   }
+}
+@media (prefers-color-scheme: dark) {
+#input {
+    background: #1b1d1f;
+    border-right: 2px solid #0f0f0f;
+    color:#FFF;
+    height:auto;
+}
+#output {
+    background: #191b1c;
+    color:#FFF;
+    height:auto;
+}
+th{
+  background:#2a5fc7;
+}
+header{
+  background-color:#0f1012;
+  color:#FFF;
+}
+a{
+  color:#8fb5ff
+}
+footer{
+  background-color:#0f1012;
+  color:#FFF;
+}
+.info{
+  color:#FFF;
+}
+.suport-buttons a:hover {
+  background: #f3f5f8;
+  color:#0f0f0f
+}
+.suport-buttons a{
+  color:#FFF;
+}
+.arrow{
+-webkit-filter: invert(100%);
+filter: invert(100%);
+}
 }
